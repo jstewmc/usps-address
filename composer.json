@@ -1,0 +1,21 @@
+{
+	"name": "jstewmc/usps-address",
+	"description": "A simple PHP class for United States Postal Service (USPS) addresses",
+	"license": "MIT",
+	"keywords": ["php", "address", "united", "states", "postal", "service", "usps"],
+	"authors": [
+		{
+			"name": "Jack Clayton",
+			"email": "clayjs0@gmail.com"	
+		}
+	],
+	"require": {},
+	"require-dev": {
+		"phpunit/phpunit": "4.2.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jstewmc\\UspsAddress\\": "src/"
+		}
+	}
+}
