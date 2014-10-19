@@ -3,13 +3,13 @@ A simple class for a (normalized) United States Postal Service (USPS) address.
 
 On a project in Fall 2014, I needed to compare United States Postal Service (USPS) addresses. 
 
-Comparing addresses is tricky. There are many different ways to represent the same physical address. For example, "123 First St" is the same address as "123 1st Street". However, to a computer, those are two different strings. 
+Comparing addresses is tricky. There are many different ways to represent the same physical address. For example, "123 *First* St" is the same address as "123 *1st* St". However, to a computer, those are two different strings. 
 
 Of course, these days there are several API's that normalize, validate, and authenticate USPS addresses. However, I needed to compare thousands of USPS addresses at a time. I didn't want to rely on a web service (most of which require you to use their system to use their API). I probably couldn't afford it, and they probably wouldn't like me banging away at their servers all day.
 
 So, I wrote my own elementary USPS address class (and USPS normalized address).
 
-[API documentation](https://jstewmc.github.io/usps-address/api/0.1.0), [report an issue](https://github.com/jstewmc/usps-address/issues), [contribute](https://github.com/jstewmc/usps-address/blob/master/contributing.md), or [ask a question](mailto:clayjs0@gmail.com)
+Feel free to check out the [API documentation](https://jstewmc.github.io/usps-address/api/0.1.0), [report an issue](https://github.com/jstewmc/usps-address/issues), [contribute](https://github.com/jstewmc/usps-address/blob/master/contributing.md), or [ask a question](mailto:clayjs0@gmail.com)
 
 ```php
 // create two USPS addresses
@@ -24,9 +24,6 @@ $b->setStreet1('31 Spooner St')  // note "31" and "St"
 	->setCity('Quahog')
 	->setState('RI')             // note "RI"
 	->setZip('12345');
-
-// I've used setters here you can also set properties at instantiation:
-//     new UspsAddress($street1, $street2, $city, $state, $zip);
 
 $a->equals($b);  // returns true
 
@@ -43,6 +40,11 @@ $a->getHash();  // returns "dc9a67eeb699f3d04ae4ee64b7cf014e"
 $b->getHash();  // returns "d8b16c02b495d0b657e44d28e8810ce5"
 $A->getHash();  // returns "a8262953aa90b4082d53081701034a56"
 $B->getHash();  // returns "a8262953aa90b4082d53081701034a56"
+
+// I've used setters in the examples here
+// however, you can also set an address' properties at instantiation
+$c = new UspsAddress('31 Spooner St', null, 'Quahog', 'RI', '12345');
+```
 
 ## Tests
 
