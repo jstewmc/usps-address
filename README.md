@@ -9,7 +9,7 @@ Of course, these days there are several API's that normalize, validate, and auth
 
 So, I wrote my own elementary USPS address class (and USPS normalized address).
 
-Feel free to check out the [API documentation](https://jstewmc.github.io/usps-address/api/0.1.0), [report an issue](https://github.com/jstewmc/usps-address/issues), [contribute](https://github.com/jstewmc/usps-address/blob/master/contributing.md), or [ask a question](mailto:clayjs0@gmail.com)
+Feel free to check out the [API documentation](https://jstewmc.github.io/usps-address/api/0.1.0), [report an issue](https://github.com/jstewmc/usps-address/issues), [contribute](https://github.com/jstewmc/usps-address/blob/master/CHANGELOG.md), or [ask a question](mailto:clayjs0@gmail.com).
 
 ```php
 // create two USPS addresses
@@ -31,7 +31,7 @@ $a->equals($b);  // returns true
 // that is, it translates abbreviations, lower-cases, trims whitespace, 
 //     converts numeric words to their numeric value, etc
 
-// you can access the normalized version of an address directly if you'd like
+// you can access the normalized version of an address if you'd like
 $A = $a->getNorm();
 $B = $b->getNorm();
 
@@ -43,6 +43,7 @@ $B->getHash();  // returns "a8262953aa90b4082d53081701034a56"
 
 // I've used setters in the examples here
 // however, you can also set an address' properties at instantiation
+//
 $c = new UspsAddress('31 Spooner St', null, 'Quahog', 'RI', '12345');
 ```
 
@@ -66,7 +67,7 @@ Feel free to contribute your own improvements:
 10. Pull request
 11. Relax and eat a Paleo muffin
 
-See [contributing.md](https://github.com/jstewmc/usps-address/blob/master/contributing.md) for details.
+See [contributing.md](https://github.com/jstewmc/usps-address/blob/master/CHANGELOG.md) for details.
 
 ## Author
 
@@ -78,4 +79,4 @@ The UspsAddress library is released under the MIT License. See the [LICENSE](htt
 
 ## History
 
-You can view the (short) history of the UspsAddress project in the [changelog.md](https://github.com/jstewmc/usps-address/blob/master/changelog.md) file.
+You can view the (short) history of the UspsAddress project in the [changelog.md](https://github.com/jstewmc/usps-address/blob/master/CHANGELOG.md) file.
