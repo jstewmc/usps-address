@@ -2,18 +2,29 @@
 	"name": "jstewmc/usps-address",
 	"description": "A simple PHP class for United States Postal Service (USPS) addresses",
 	"license": "MIT",
-	"keywords": ["php", "address", "united", "states", "postal", "service", "usps"],
+	"keywords": [
+		"php",
+		"address",
+		"united",
+		"states",
+		"postal",
+		"service",
+		"usps"
+	],
 	"authors": [
 		{
-			"name": "Jack Clayton",
-			"email": "clayjs0@gmail.com"	
+			"name": "Contributors",
+			"homepage": "https://github.com/jstewmc/php-helpers/contributors"
 		}
 	],
 	"require": {
-		"jstewmc/php-helpers": "0.1.1"
+		"php": "^7.4 || ^8.0",
+		"jstewmc/php-helpers": "^0.2"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "4.2.*"
+		"phpunit/phpunit": "^9",
+		"roave/security-advisories": "dev-latest",
+    "slevomat/coding-standard": "^7"
 	},
 	"autoload": {
 		"psr-4": {
