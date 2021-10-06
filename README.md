@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/jstewmc/usps-address.svg?style=svg)](https://circleci.com/gh/jstewmc/usps-address) [![codecov](https://codecov.io/gh/jstewmc/usps-address/branch/master/graph/badge.svg?token=1A8WcraCqs)](https://codecov.io/gh/jstewmc/usps-address)
+
 # USPS Address
 
 A library for normalizing and comparing United States Postal Service (USPS) addresses in PHP.
