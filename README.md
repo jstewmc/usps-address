@@ -57,16 +57,16 @@ $compare = new Compare();
 // instantiate your address
 $address1 = (new MyAddress())
   ->setStreet1('Thirty-one Spooner Street')
-	->setCity('Quahog')
-	->setState('Rhode Island')
-	->setZip('12345');
+  ->setCity('Quahog')
+  ->setState('Rhode Island')
+  ->setZip('12345');
 
 // instantiate a same-but-different address
 $address2 = (new MyAddress())
   ->setStreet1('31 Spooner St')
-	->setCity('Quahog')
-	->setState('RI')
-	->setZip('12345');
+  ->setCity('Quahog')
+  ->setState('RI')
+  ->setZip('12345');
 
 $compare($address1, $address2);  // returns true
 ```
@@ -82,9 +82,9 @@ $normalize = new Normalize();
 // create an instance of your implementation
 $address = (new MyAddress())
   ->setStreet1('Thirty-one Spooner Street')
-	->setCity('Quahog')
-	->setState('Rhode Island')
-	->setZip('12345');
+  ->setCity('Quahog')
+  ->setState('Rhode Island')
+  ->setZip('12345');
 
 $norm = $normalize($address);
 
@@ -116,16 +116,16 @@ use Jstewmc\UspsAddress\Address;
 // create an address using our implementation
 $address1 = (new Address())
   ->setStreet1('Thirty-one Spooner Street')
-	->setCity('Quahog')
-	->setState('Rhode Island')
-	->setZip('12345');
+  ->setCity('Quahog')
+  ->setState('Rhode Island')
+  ->setZip('12345');
 
 // create a same-but-different address
 $address2 = (new Address())
   ->setStreet1('31 Spooner St')
-	->setCity('Quahog')
-	->setState('RI')
-	->setZip('12345');
+  ->setCity('Quahog')
+  ->setState('RI')
+  ->setZip('12345');
 
 $address1->equals($address2);  // returns true
 
