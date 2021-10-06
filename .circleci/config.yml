@@ -15,7 +15,6 @@ jobs:
       - checkout
 
       - run: sudo apt update
-      - run: sudo docker-php-ext-install zip sockets
 
       # Download and cache dependencies.
       - restore_cache:
@@ -41,7 +40,6 @@ jobs:
       - checkout
 
       - run: sudo apt update
-      - run: sudo docker-php-ext-install zip sockets
 
       # Download and cache dependencies.
       - restore_cache:
